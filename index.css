@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 body {
     
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: Nova+Square;
     margin: 0;
     padding: 0;
@@ -111,7 +111,7 @@ h3 {
     background-color: #91a3f2;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 190px;
     
     font-size: 1.2rem;
     font-weight: bold;
@@ -179,7 +179,7 @@ hr {
 #contact {
     
     padding: 40px 0;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -196,7 +196,7 @@ footer {
     background-color: rgb(8, 5, 76);
     padding: 1px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 1rem;
 }
 .content {   
@@ -208,7 +208,7 @@ footer {
     border-radius: 30px;  
     
  
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 1.3rem;
 }
 
