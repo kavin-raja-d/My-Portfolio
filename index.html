@@ -38,6 +38,45 @@
             padding: 10px 20px;
         }
 
+        header {
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: rgb(75, 144, 204);
+            font-size: 1.2rem;
+            text-decoration: none;  
+        }
+
+        
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #91a3f2;
+        }
+
         
 
         table {
@@ -63,6 +102,7 @@
             color: #91a3f2;
             margin-bottom: 10px;
         }
+
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -155,6 +195,14 @@
         }
 
         @media (max-width: 768px) {
+            .logo{
+                font-size:1.5rem ;
+            }
+
+            nav ul li a{
+                font-size:1rem ;
+            }
+
             header h1 {
                 font-size: 2rem;
             }
@@ -222,19 +270,17 @@
 </head>
 <body>
     <header>
-        <table>
-            <tr>
-                <td>
-                    <h3><a href="#home">Home</a></h3>
-                </td>
-                <td>
-                    <h3><a href="#about">About Me</a></h3>
-                </td>
-                <td>
-                    <h3><a href="#contact">Contact Me</a></h3>
-                </td>
-            </tr>
-        </table>
+        <nav>
+            <div class="logo">
+                DEVELOPER
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
         
     </header>
     
@@ -243,7 +289,7 @@
             <td><img src="Images/Profile.png" alt="Profile"></td>
             <td>
                 <h1>Kavinraja D</h1>
-                <h3>Student at SEC<br>Web Developer</h3>
+                <h3>Student at SEC<br><EM>"Web Developer"</EM></h3>
                 <a href="#" class="btn">Resume</a>
             </td>
         </tr>
@@ -254,6 +300,13 @@
         Intelligence and Machine Learning</strong> at Saveetha Engineering College, Chennai.<br>
         I am passionate about Machine Learning and web development.<br>
         I have good knowledge in both <strong>technical and communication skills.</strong>
+        <em><br>Arthur Samuel, an early American leader in the field of computer gaming and artificial intelligence, 
+            coined the term “Machine Learning ” in 1959 while at IBM.
+             He defined machine learning as <strong>“the field of study that gives computers the ability to 
+             learn without being explicitly programmed “.</strong>
+              However, there is no universally accepted definition for machine learning. 
+              Different authors define the term differently.
+             We give below two more definitions.</em>
     </p>
 
     <hr>
