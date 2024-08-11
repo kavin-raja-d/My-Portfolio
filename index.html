@@ -5,268 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
     <link rel="icon" href="Images/KR_ICON.ico">
-    <style>
-        body {
-            background: linear-gradient(to right, rgb(0, 0, 0), rgb(5, 5, 77));
-            color: rgb(255, 255, 255);
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: black;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header table {
-            width: 50%;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        header h1 {
-            margin: 20px 0;
-            font-size: 2.5rem;
-        }
-
-        header a {
-            color: rgb(75, 144, 204);
-            font-size: 1.2rem;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-
-        header {
-            background-color: black;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li {
-            display: inline;
-        }
-
-        nav ul li a {
-            color: rgb(75, 144, 204);
-            font-size: 1.2rem;
-            text-decoration: none;  
-        }
-
-        
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            color: #91a3f2;
-        }
-
-        
-
-        table {
-            width: 50%;
-            max-width: 1050px;
-            margin: 20px auto;
-        }
-
-        img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 50%;
-            margin: 0 auto;
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin: 10px 0;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: #91a3f2;
-            margin-bottom: 10px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #91a3f2;
-            color: rgb(0, 0, 0);
-            text-decoration: none;
-            
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: black;
-            color: #91a3f2;
-        }
-
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            text-align: center;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-
-        hr {
-            border: 1px solid #91a3f2;
-            margin: 40px 0;
-        }
-
-        .project-table {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .project-table td {
-            padding: 10px;
-        }
-
-        .project-table img {
-            width: 100%;
-            max-width: 350px;
-            height: auto;
-            border-radius: 10px;
-            
-        }
-
-
-        .about-table {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px auto;
-            text-align: left;
-        }
-
-        .about-table td {
-            padding: 20px;
-        }
-
-        .about-table h3 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-            color: #91a3f2;
-        }
-
-        #contact {
-            
-            padding: 40px 0;
-            color: white;
-            text-align: center;
-        }
-
-        #contact a {
-            color: #91a3f2;
-            text-decoration: none;
-        }
-
-        #contact a:hover {
-            text-decoration: underline;
-        }
-
-        footer {
-            background-color: black;
-            padding: 10px;
-            text-align: center;
-            color: white;
-            font-size: 1rem;
-        }
-
-        @media (max-width: 768px) {
-            .logo{
-                font-size:1.5rem ;
-            }
-
-            nav ul li a{
-                font-size:1rem ;
-            }
-
-            header h1 {
-                font-size: 2rem;
-            }
-
-            header a {
-                display: block;
-                padding: 10px 0;
-            }
-
-            .project-table img {
-                max-width: 100%;
-            }
-
-            table, .about-table {
-                width: 90%;
-            }
-
-            .project-table td, .about-table td {
-                padding: 10px;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            img {
-                max-width: 150px;
-            }
-
-            h1 {
-                font-size: 1.5rem;
-            }
-
-            h3 {
-                font-size: 1.2rem;
-            }
-
-            .btn {
-                font-size: 1rem;
-            }
-
-            p {
-                font-size: 0.9rem;
-            }
-
-            hr {
-                margin: 20px 0;
-            }
-
-            #contact {
-                padding: 20px 0;
-            }
-
-            footer {
-                font-size: 0.9rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header>
@@ -282,7 +21,7 @@
         </nav>
     </header>
         
-    </header>
+  
     
     <table>
         <tr>
@@ -290,25 +29,26 @@
             <td>
                 <h1>Kavinraja D</h1>
                 <h3>Student at SEC<br><EM>"Web Developer"</EM></h3>
-                <a href="#" class="btn">Resume</a>
+                <a href="https://www.linkedin.com/in/kavinraja-d-784893262/" class="btn">Resume</a>
             </td>
         </tr>
     </table>
 
-    <p>
+    <p class="content">
         <strong>I am Kavin</strong>, currently pursuing a <strong>B.Tech in Artificial 
         Intelligence and Machine Learning</strong> at Saveetha Engineering College, Chennai.<br>
         I am passionate about Machine Learning and web development.<br>
         I have good knowledge in both <strong>technical and communication skills.</strong>
-        <em><br>Arthur Samuel, an early American leader in the field of computer gaming and artificial intelligence, 
+    </p>
+    <p class="content">
+        <em><br>"Arthur Samuel, an early American leader in the field of computer gaming and artificial intelligence, 
             coined the term “Machine Learning ” in 1959 while at IBM.
              He defined machine learning as <strong>“the field of study that gives computers the ability to 
              learn without being explicitly programmed “.</strong>
               However, there is no universally accepted definition for machine learning. 
               Different authors define the term differently.
-             We give below two more definitions.</em>
+             We give below two more definitions."</em>
     </p>
-
     <hr>
     
     <h2 align="center"><strong>My Projects</strong></h2>
