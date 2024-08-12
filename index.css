@@ -151,7 +151,13 @@ hr {
     max-width: 350px;
     height: auto;
     border-radius: 10px;
+    transition: 0.3s ease;
+
     
+}
+.project-table img:hover{
+    transition: 0.3s ease;
+    transform: scale(1.03);
 }
 
 
@@ -176,7 +182,12 @@ hr {
 }
 .about-table{
     font-size: 1rem;
+    transition: 0.3s ease;
+    
 
+}
+.about-table:hover{
+    transform: scale(1.03);
 }
 
 #contact {
@@ -189,10 +200,13 @@ hr {
 #contact a {
     color: #91a3f2;
     text-decoration: none;
+    
 }
 
 #contact a:hover {
     text-decoration: underline;
+    
+    transform: scale(1.03);
 }
 
 footer {
@@ -209,10 +223,12 @@ footer {
     padding-left: 200px;
     padding-right: 200px;
     border-radius: 30px;  
-    
- 
     color: rgb(255, 255, 255);
     font-size: 1.3rem;
+    transition: 0.3s ease;
+}
+.content:hover{
+    transform: scale(1.03);
 }
 
 @media (max-width: 900px) {
