@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 body {
     
-    background-color: black;
+    background: linear-gradient(to right,rgb(0, 0, 0),rgb(5, 5, 86));
     color: rgb(255, 255, 255);
-    font-family: Nova+Square;
+    font-family: Nova Square;
     margin: 0;
     padding: 0;
 }
