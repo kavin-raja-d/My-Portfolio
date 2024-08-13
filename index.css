@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 body {
     
-    background: linear-gradient(to right,rgb(0, 0, 0),rgb(5, 5, 86));
+    background: linear-gradient(to right,rgb(0, 0, 0),rgb(4, 12, 78));
     color: rgb(255, 255, 255);
     font-family: Nova Square;
     margin: 0;
@@ -62,9 +62,15 @@ nav ul li {
 nav ul li a {
     color: rgb(75, 144, 204);
     font-size: 1.2rem;
-    text-decoration: none;  
+    text-decoration: none;
+    transition: color 0.5s ease;
+    box-shadow: 4px 4px 4px 4px blue; 
 }
 
+nav ul li a:hover{
+    color: rgb(255, 255, 255);
+    transition: scale(10.3) ;
+}
 
 
 .logo {
@@ -152,11 +158,10 @@ hr {
     height: auto;
     border-radius: 10px;
     transition: 0.3s ease;
-
+    
     
 }
 .project-table img:hover{
-    transition: 0.3s ease;
     transform: scale(1.03);
 }
 
