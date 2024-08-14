@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+
 body {
     
     background: linear-gradient(to right,rgb(0, 0, 0),rgb(4, 12, 78));
@@ -14,12 +17,6 @@ header {
     text-align: center;
 }
 
-header table {
-    width: 50%;
-    max-width: 1200px;
-    margin: 0 auto;
-    
-}
 
 header h1 {
     margin: 20px 0;
@@ -68,6 +65,8 @@ nav ul li a {
 }
 
 nav ul li a:hover{
+    background-color: blue;
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     transition: scale(10.3) ;
 }
@@ -150,6 +149,7 @@ hr {
 
 .project-table td {
     padding: 10px;
+    font-size: 1rem;
 }
 
 .project-table img {
@@ -189,7 +189,6 @@ hr {
     font-size: 1rem;
     transition: 0.3s ease;
     
-
 }
 .about-table:hover{
     transform: scale(1.03);
@@ -213,6 +212,17 @@ hr {
     
     transform: scale(1.03);
 }
+i{
+    align-items: center;
+    font-size: 2rem; 
+    text-decoration: none;
+    border-radius: 15px;
+    transition: color 0.3s ease
+}
+i:hover{
+    color: white; 
+    transform: scale(1.1); 
+}   
 
 footer {
     background-color: rgb(8, 5, 76);
@@ -259,6 +269,9 @@ footer {
 
     .project-table img {
         max-width: 100%;
+    }
+    .project-table td{
+        font-size: 0.5rem;
     }
 
     table, .about-table {
@@ -323,5 +336,8 @@ footer {
         width: 80%;
         padding: 10px;
         font-size: 0.8rem;
+    }
+    .about-table h3{
+        font-size: 1rem;
     }
 }
