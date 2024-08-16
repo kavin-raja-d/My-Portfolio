@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        form {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            width: 90%;
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="password"],
+        input[type="date"],
+        input[type="time"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        button {
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group:last-child {
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            form {
+                width: 95%;
+            }
+
+            legend {
+                font-size: 1.2em;
+            }
+
+            button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            legend {
+                font-size: 1em;
+            }
+
+            button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="/submit_query" method="post">
+        <fieldset>
+            <legend>Query Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="query">Your Query:</label>
+            <textarea id="query" name="query" required></textarea>
+
+            <button type="submit">Submit Query</button>
+        </fieldset>
+    </form>
+    <form action="/submit_request" method="post">
+        <fieldset>
+            <legend>Request Form</legend>
+            <label for="request-type">Request Type:</label>
+            <select id="request-type" name="request_type" required>
+                <option value="information">Information</option>
+                <option value="support">Support</option>
+                <option value="service">Service</option>
+            </select>
+
+            <label for="details">Request Details:</label>
+            <textarea id="details" name="details" required></textarea>
+
+            <button type="submit">Submit Request</button>
+        </fieldset>
+    </form>
+    <form action="/submit_feedback" method="post">
+        <fieldset>
+            <legend>Feedback Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </fieldset>
+    </form>
+    <form action="/submit_contact" method="post">
+        <fieldset>
+            <legend>Contact Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </fieldset>
+    </form>
+    <form action="/register" method="post">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+    <form action="/login" method="post">
+        <fieldset>
+            <legend>Login Form</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </fieldset>
+    </form>
+    <form action="/submit_survey" method="post">
+        <fieldset>
+            <legend>Survey Form</legend>
+            <label for="question1">How satisfied are you with our service?</label>
+            <select id="question1" name="question1" required>
+                <option value="very_satisfied">Very Satisfied</option>
+                <option value="satisfied">Satisfied</option>
+                <option value="neutral">Neutral</option>
+                <option value="dissatisfied">Dissatisfied</option>
+                <option value="very_dissatisfied">Very Dissatisfied</option>
+            </select>
+
+            <label for="question2">Would you recommend us to others?</label>
+            <select id="question2" name="question2" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit Survey</button>
+        </fieldset>
+    </form>
+    <form action="/subscribe_newsletter" method="post">
+        <fieldset>
+            <legend>Newsletter Subscription Form</legend>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Subscribe</button>
+        </fieldset>
+    </form>
+    <form action="/apply_job" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Job Application Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="cover-letter">Cover Letter:</label>
+            <textarea id="cover-letter" name="cover_letter" required></textarea>
+
+            <button type="submit">Apply</button>
+        </fieldset>
+    </form>
+    <form action="/submit_rsvp" method="post">
+        <fieldset>
+            <legend>RSVP Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="attending">Will you be attending?</label>
+            <select id="attending" name="attending" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="0" required>
+
+            <button type="submit">RSVP</button>
+        </fieldset>
+    </form>
+    <form action="/submit_order" method="post">
+        <fieldset>
+            <legend>Order Form</legend>
+            <label for="product">Product:</label>
+            <input type="text" id="product" name="product" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <label for="address">Shipping Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button type="submit">Place Order</button>
+        </fieldset>
+    </form>
+    <form action="/submit_donation" method="post">
+        <fieldset>
+            <legend>Donation Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" required>
+
+            <label for="payment-method">Payment Method:</label>
+            <select id="payment-method" name="payment_method" required>
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">PayPal</option>
+                <option value="bank_transfer">Bank Transfer</option>
+            </select>
+
+            <button type="submit">Donate</button>
+        </fieldset>
+    </form>
+    <form action="/submit_complaint" method="post">
+        <fieldset>
+            <legend>Complaint Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="complaint">Complaint Details:</label>
+            <textarea id="complaint" name="complaint" required></textarea>
+
+            <button type="submit">Submit Complaint</button>
+        </fieldset>
+    </form>
+    <form action="/report_issue" method="post">
+        <fieldset>
+            <legend>Issue Reporting Form</legend>
+            <label for="issue-type">Issue Type:</label>
+            <select id="issue-type" name="issue_type" required>
+                <option value="bug">Bug</option>
+                <option value="feature_request">Feature Request</option>
+                <option value="general">General Issue</option>
+            </select>
+
+            <label for="description">Issue Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <button type="submit">Report Issue</button>
+        </fieldset>
+    </form>
+    <form action="/submit_satisfaction" method="post">
+        <fieldset>
+            <legend>Satisfaction Survey Form</legend>
+            <label for="rating">How would you rate your experience?</label>
+            <select id="rating" name="rating" required>
+                <option value="excellent">Excellent</option>
+                <option value="good">Good</option>
+                <option value="average">Average</option>
+                <option value="poor">Poor</option>
+                <option value="very_poor">Very Poor</option>
+            </select>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </fieldset>
+    </form>
+    <form action="/submit_ticket" method="post">
+        <fieldset>
+            <legend>Support Ticket Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="issue">Describe Your Issue:</label>
+            <textarea id="issue" name="issue" required></textarea>
+
+            <button type="submit">Submit Ticket</button>
+        </fieldset>
+    </form>
+    <form action="/submit_booking" method="post">
+        <fieldset>
+            <legend>Booking Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Booking Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Booking Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Submit Booking</button>
+        </fieldset>
+    </form>
+    <form action="/submit_appointment" method="post">
+        <fieldset>
+            <legend>Appointment Request Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Preferred Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Preferred Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <button type="submit">Request Appointment</button>
+        </fieldset>
+    </form>
+    <form action="/submit_reservation" method="post">
+        <fieldset>
+            <legend>Reservation Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Reservation Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Reservation Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <button type="submit">Submit Reservation</button>
+        </fieldset>
+    </form>
+    <form action="/submit_volunteer" method="post">
+        <fieldset>
+            <legend>Volunteer Sign Up Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="availability">Availability:</label>
+            <textarea id="availability" name="availability" required></textarea>
+
+            <button type="submit">Sign Up</button>
+        </fieldset>
+    </form>
+    <form action="/submit_membership" method="post">
+        <fieldset>
+            <legend>Membership Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="membership-type">Membership Type:</label>
+            <select id="membership-type" name="membership_type" required>
+                <option value="monthly">Monthly</option>
+                <option value="annual">Annual</option>
+                <option value="lifetime">Lifetime</option>
+            </select>
+
+            <button type="submit">Submit Membership</button>
+        </fieldset>
+    </form>
+    <form action="/submit_scholarship" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Scholarship Application Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="essay">Essay Submission:</label>
+            <textarea id="essay" name="essay" required></textarea>
+
+            <button type="submit">Apply</button>
+        </fieldset>
+    </form>
+</body>
+</html>
